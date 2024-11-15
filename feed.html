@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-level">
+                <div class="profile-icon"></div>
+                <span class="level">Level 1</span>
+            </div>
+            <div class="logo">CITYRUN</div>
+            <video autoplay></video>
+            <video id="video"></video>
+            <button id="start-button">Iniciar Câmera</button>
+            <button id="stop-button">Parar Câmera</button>
+            <button id="capture-button">Capturar Imagem</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <img id="image-output" />
+        </header>
+
+        <div class="welcome-message">
+            <h1>Olá, Nome!</h1>
+            <p>Qual será sua atividade hoje?</p>
+        </div>
+
+        <section class="activity-section">
+            <h2>🔄 Sua última atividade!</h2>
+            <div class="last-activity">
+                <img src="placeholder.png" alt="Última atividade">
+            </div>
+        </section>
+
+        <section class="feed-section" id="feed-section">
+            <h2>📡 Feed</h2>
+            <div class="feed-item">
+                <img src="placeholder.png" alt="Imagem do Feed">
+            </div>
+        </section>                                                                          
+    
+
+    <footer>
+        <div class="nav-icons">
+            <div class="icon" id="stats-btn">📊</div>
+            <a href="chat.html" class="icon" id="favorites-btn">✉️</a>
+            <a href="feed.html" class="icon home-icon" id="home-btn">🏠</a>
+            <a href="notificacao.html" class="icon" id="favorites-btn">🤍</a>
+            <a href="perfil.html" class="icon" id="profile-btn">👤</a>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="feed.js"></script>
+</body>
+</html>

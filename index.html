@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Tela de Login -->
+            <div class="login-form">
+                <h2>Faça Login</h2>
+                <form action="testeLogin.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit" name="submit" class="login-btn">Login</button>
+                    <div id="google-login-button"></div>
+
+                </form>
+                <p><a href="#" onclick="toggleForms()">Esqueceu a senha?</a></p>
+            </div>
+
+            <!-- Tela de Cadastro -->
+            <div class="signup-form">
+                <h2>Crie sua Conta</h2>
+                <form action="usuario.php" method="post">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit" name="submit" class="signup-btn">Cadastrar</button>
+                </form>
+            </div>
+
+            <!-- Bloco Verde Animado -->
+            <div class="info-box" id="info-box">
+                <div id="login-box">
+                    <h3>Olá, Corredor</h3>
+                    <p>Insira os seus dados pessoais e comece a sua jornada conosco.</p>
+                    <button class="toggle-btn" onclick="toggleForms()">Crie uma Conta</button>
+                </div>
+                <div id="signup-box">
+                    <h3>Bem-vindo de Volta!</h3>
+                    <p>Para se manter conectado, faça login com suas informações pessoais.</p>
+                    <button class="toggle-btn" onclick="toggleForms()">Faça Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    
